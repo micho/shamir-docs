@@ -7,7 +7,9 @@ hide_table_of_contents: false
 
 ## Stuck at "Fetching your node identity"
 
-When using the file `docker-compose-with-clients-metrics.yml` or `docker-compose-with-clients.yml`, the Diva client will wait until the Ethereum nodes are synced without being able to start. If that happens, the Diva Operator UI might show a `Fetching your node identity...` message that never resolves. Please, restart the Diva client after your Ethereum clients are synced to solve the issue.
+When running Ethereum clients in your own machine (which happens when using the Automated Installation with local Ethereum clients or the `docker-compose.yml` or `docker-compose-lodestar-vc.yml` files), the Diva client will wait until the Ethereum nodes are synced without being able to start.
+
+If that happens, the Diva Operator UI might show a `Fetching your node identity...` message that never resolves. Please, restart the Diva client after your Ethereum clients are synced to solve the issue.
 
 ## Not receiving any validator key shares
 
